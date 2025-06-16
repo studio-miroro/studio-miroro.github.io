@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".assets/css/0-main.css">
+    <link rel="stylesheet" href=".assets/css/1-header.css">
+    <link rel="stylesheet" href=".assets/css/2-intro.css">
+    <link rel="stylesheet" href=".assets/css/3-about.css">
+    <link rel="stylesheet" href=".assets/css/4-screenshots.css">
+    <link rel="stylesheet" href=".assets/css/5-purchase.css">
+    <link rel="stylesheet" href=".assets/css/6-footer.css">
+    <link rel="stylesheet" href=".assets/css/7-mobile.css">
+    <link rel="stylesheet" href=".assets/css/8-menu.css">
+    <link rel="stylesheet" href=".assets/css/9-screenshots.css">
+    <link rel="shortcut icon" href=".assets/img/icon.png" type="image/x-icon">
+    <meta name="keywords" content="Little Farmer, LF, Маленький Фермер, Уютная игра, Cozy game, game, 2d game"/>
+    <title>Little Farmer - Studio Miroro</title>
+</head>
+    <body>
+        <!-- Screenshots -->
+        <div id="background-img" style="display: none;">
+            <div id="screenshot">
+                <div id="button-container">
+                    <button id="screenshot-close"><span><i class="fa-solid fa-xmark"></i></span></button>
+                </div>
+                <div id="img-container">
+                    <img id="img-view" src=".assets/img/screenshot_2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div id="background" style="display: none;">
+            <div id="menu" state="close">
+                <ul id="menu-header">
+                    <p id="logo">Меню</p>
+                    <button id="menu-close"><span><i class="fa-solid fa-xmark"></i></span></button>
+                </ul>
+
+                <ul id="menu-links">
+                    <a id="menu-item" href="#about">
+                        Об игре
+                    </a>
+
+                    <a id="menu-item" href="#screenshots">
+                        Скриншоты
+                    </a>
+
+                    <a id="menu-item" href="#purchase">
+                        Приобрести
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+
+        <header>
+            <div id="header">
+                <a href="#intro"><img id="header-icon" src=".assets/img/icon.png" alt=""></a>
+                <a id="items" href="#about">Об игре</a>
+                <a id="items" href="#screenshots">Скриншоты</a>
+                <a id="items" href="#purchase">Приобрести</a>
+            </div>
+            <button id="menu-open"><span><i class="fa-solid fa-bars"></i></span></button>
+        </header>
+
+        <!-- Main Content -->
+
+            <!-- Intro -->
+            <section id="intro">
+                <img src=".assets/img/logo.png" alt="">
+                <p>Добро пожаловать в свой уютный уголок!</p>
+            </section>
+
+            <!-- About Game -->
+            <section id="about">
+                <h1>Об игре</h1>
+                <div id="container">
+                    <div id="content">
+                        <p>
+                            Little Farmer — Расслабляющий симулятор фермерства. Погрузитесь в атмосферу спокойствия и творчества!
+                            <br><br>
+                            В вашем распоряжении — заброшенный земельный участок размером 56x36 клеток. Развивайте, украшайте и вдохновляйтесь — здесь нет правил, только ваша фантазия!
+                            <br><br><br>
+                        
+                            <b>Что вас ждёт:</b>
+                            <br>
+                            • Фермерство: Выращивайте разнообразные культуры, создавайте роскошный огород и удивляйте соседей своими урожаями!
+                            <br><br>
+                            • Строительство: Возводите полезные постройки, которые помогут вам в развитии фермы.
+                            <br><br>
+                            • Смена сезонов: Адаптируйтесь к временам года, планируйте свои действия и наслаждайтесь уникальной атмосферой каждого сезона.
+                            <br><br>
+                            • Свобода действий: Декорируйте ваш участок так, как захочется. Создайте ферму, которая отражает ваш стиль и характер.
+                        </p>
+                    
+                        <img src=".assets/img/screenshot_1.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Screenshots -->
+            <section id="screenshots">
+                <h1>Скриншоты прямиком из игры</h1>
+                <div id="imgs-container">
+                    <div id="game-imgs">
+                        <article id="img" img-id="2"><img src=".assets/img/screenshot_2.png"></article>
+                        <article id="img" img-id="3"><img src=".assets/img/screenshot_3.png"></article>
+                        <article id="img" img-id="4"><img src=".assets/img/screenshot_4.png"></article>
+                        <article id="img" img-id="5"><img src=".assets/img/screenshot_5.png"></article>
+                        <article id="img" img-id="6"><img src=".assets/img/screenshot_6.png"></article>
+                        <article id="img" img-id="7"><img src=".assets/img/screenshot_7.png"></article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Purchase -->
+            <section id="purchase">
+                <h1>Готовы к приключениям?</h1>
+                <p>Ваш участок ждёт вас!</p>
+                <div id="platforms-container">
+                    <div id="platforms">
+                        <article onclick="platformRedirect('VKPlay')">
+                            <span><img src=".assets/img/vkplay.svg" alt=""></span>
+                            <p>VK Play</p>
+                        </article>
+                    </div>
+                </div>
+
+                <h1>Системный Требования</h1>
+
+                <div id="requirements-container">
+                    <div id="system-requirements">
+                        <div id="minimal">
+                            <h2>Минимальные</h2>
+                            <p><span><i class="fa-brands fa-windows"></i></span> <b>ОС</b>: Windows 7, Windows 10</p>
+                            <p><span><i class="fa-solid fa-microchip"></i></span> <b>Процессор</b>: Intel i3 / AMD FX—6300</p>
+                            <p><span><i class="fa-solid fa-fan"></i></span> <b>Видеокарта</b>: GT 1030 / RX 6300</p>
+                            <p><span><i class="fa-solid fa-memory"></i></span> <b>ОЗУ</b>: 4 ГБ</p>
+                            <p><span><i class="fa-solid fa-hard-drive"></i></span> <b>Место на диске</b>: 186.3 МБ</p>
+                            <p><span><i class="fa-solid fa-cube"></i></span> <b>Другое</b>: Поддержка Vulkan 1.0</p>
+                        </div>
+
+                        <div id="recommended">
+                            <h2>Рекомендуемые</h2>
+                            <p><span><i class="fa-brands fa-windows"></i></span> <b>ОС</b>: Windows 7, Windows 10</p>
+                            <p><span><i class="fa-solid fa-microchip"></i></span> <b>Процессор</b>: Intel Core i5 / AMD Ryzen 5 3600</p>
+                            <p><span><i class="fa-solid fa-fan"></i></span> <b>Видеокарта</b>: NVIDIA GTX 1050 / AMD RX 570</p>
+                            <p><span><i class="fa-solid fa-memory"></i></span> <b>ОЗУ</b>: 8 ГБ</p>
+                            <p><span><i class="fa-solid fa-hard-drive"></i></span> <b>Место на диске</b>: 186.3 МБ</p>
+                            <p><span><i class="fa-solid fa-cube"></i></span> <b>Другое</b>: Поддержка Vulkan 1.0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <a href="">Лицензионное соглашение</a>
+            <p id="copyright"></p>
+        </footer>
+        
+        <!-- JavaScript -->
+        <script>
+            const buttonOpenMenu = document.querySelector('#menu-open');
+            buttonOpenMenu.addEventListener('click', () => openMenu());
+
+            const buttonCloseMenu = document.querySelector('#menu-close');
+            buttonCloseMenu.addEventListener('click', () => closeMenu());
+
+            const menuLinkItems = document.querySelectorAll('#menu-item');
+            menuLinkItems.forEach((link) => {
+                link.addEventListener('click', () => {
+                    closeMenu();
+                })
+            })
+        </script>
+        <script src=".assets/js/menu.js"></script>
+        <script src=".assets/js/screenshots.js"></script>
+        <script src=".assets/js/smooth-scroll.js"></script>
+        <script src=".assets/js/footer.js"></script>
+        <script src="https://kit.fontawesome.com/9aaf1c70ab.js" crossorigin="anonymous"></script>
+    </body>
+</html>

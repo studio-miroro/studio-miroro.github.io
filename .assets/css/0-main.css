@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary-base: #84593D;
+    --primary-light: #A97D5A;
+    --primary-pastel: #E8D7C9; 
+
+    --background-main: #FDF9F6;
+    --background-alt: #FFFFFF;
+    --header-background: #FFFFFF;
+
+    --text-primary: #3A2E27;
+    --text-secondary: #7A6D65;
+    --text-on-primary: #FFFFFF;
+
+    --card-title-hover: #5C3C25;
+    --card-description-hover: #84593D;
+
+    --card-background: #fffcf9;
+    --card-hover: #FFFFFF;
+    --card-shadow: rgba(132, 89, 61, 0.08);
+
+    --border-base: #E5DCD5;
+    --border-hover: #D1B8A6;
+    --border-focus: #A97D5A;
+    --border-focus-angry: #7f5330;
+
+    --badge-background: #D4E8F0;
+    --badge-text: #2A5D7A;
+    --badge-hover: #B8D4E4;
+    --badge-text-hover: #1D4257;
+
+    --badge-alt-background: #E6F0D4;
+    --badge-alt-text: #4A6B2F;
+    --badge-alt-hover: #D4E4B8;
+    --badge-alt-text-hover: #3A5524;
+
+    --accent-calm: #A2C5E0;
+    --accent-creative: #B5D8B2;
+    --accent-light: #F0E6DF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-main);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 1.5;
+}
+
+#container {
+    width: 1250px;
+} 
+
+#row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

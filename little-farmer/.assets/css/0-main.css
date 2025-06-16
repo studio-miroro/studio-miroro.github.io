@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+:root {
+    --header-background: #a17458;
+    --header-borders: #623b26;
+    --header-button-default: rgb(255,255,255,.75);
+    --header-button-hover: rgb(255,255,255);
+
+    --text-primary: #8cab54;
+    --text-second: white;
+
+    --section-about-background: #794e35;
+    --section-about-borders: #58331f;
+
+    --section-screenshots-background: #724a34;
+    --section-screenshots-borders: #381e10;
+    --section-screenshots-article: #261208;
+
+    --section-purchase-background: #906348;
+    --section-purchase-borders: #83573d;
+
+
+    --card-background: #a17458;
+    --card-borders: #58331f;
+
+    --card-background-hover: #b2866b;
+    --card-borders-hover: #794e35;
+
+    --button-close-border: #be2633;
+    --button-close-border-hover: #a01622;
+    
+}
+
+::selection {
+    background-color: rgb(140, 171, 84, .75);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

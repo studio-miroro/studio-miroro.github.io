@@ -1,0 +1,65 @@
+#background {
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+
+    #menu {
+        float: right;
+        width: 75%;
+        height: 100%;
+        background-color: var(--section-purchase-background);
+        padding: 25px;
+        color: var(--header-button-default);
+
+        #menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-family: 'Open Sans';
+                font-weight: bold;
+                font-size: 32px;
+                color: var(--header-button-hover);
+            }
+
+            button {
+                display: block;
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                outline: none;
+                border-radius: 10px;
+                border: 2px solid var(--text-secondary);
+                color: var(--text-secondary);
+                background-color: var(--header-background);
+                cursor: pointer;
+            } button:hover {
+                background-color: var(--text-primary);
+                color: var(--text-secondary);
+            }
+        }
+
+        #menu-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+
+            a {
+                font-family: 'Open Sans';
+                font-size: 18px;
+                text-decoration: none;
+                margin: 15px 5px;
+                color: var(--text-secondary);
+                font-weight: 600;
+                padding: 5px 10px;
+                padding: 0;
+
+            } a:hover {
+                color: var(--text-primary);
+            }
+        }
+    }
+}

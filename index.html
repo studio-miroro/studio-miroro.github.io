@@ -3,9 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href=".assets/css/0-main.css">
+    <link rel="stylesheet" href=".assets/css/1-header.css">
+    <link rel="stylesheet" href=".assets/css/2-slider.css">
+    <link rel="stylesheet" href=".assets/css/3-content.css">
+    <link rel="stylesheet" href=".assets/css/4-contacts.css">
+    <link rel="stylesheet" href=".assets/css/5-footer.css">
+    <link rel="stylesheet" href=".assets/css/6-mobile.css">
+    <link rel="stylesheet" href=".assets/css/7-menu.css">
+    <title>Miroro</title>
 </head>
     <body>
+
+        <div id="background" style="display: none;">
+            <div id="menu" state="close">
+
+                <ul id="menu-header">
+                    <p id="logo">Меню</p>
+                    <button id="menu-close"><span><i class="fa-solid fa-xmark"></i></span></button>
+                </ul>
+
+                <ul id="menu-links">
+                    <a id="menu-item" href="#about">
+                        О студии
+                    </a>
+
+                    <a id="menu-item" href="#games">
+                        Наши игры
+                    </a>
+
+                    <a id="menu-item" href="#contacts">
+                        Контакты
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+
+        <main id="header">
+            <div id="row">
+                <div id="container">
+                    <header>
+                        <div id="content">
+                            <p id="logo">Studio Miroro</p>
+                            <div>
+                                <a href="#about">О студии</a>
+                                <a href="#games">Наши игры</a>
+                                <a href="#contacts">Контакты</a>
+                            </div>
+                        </div>
+
+                        <button id="menu-open">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                    </header>
+                </div>
+            </div>
+        </main>
+
+        <div id="row">
+            <div id="container">
+                <slider>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src=".assets/img/little-farmer-cover.png" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src=".assets/img/delicious-bread-cover.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" onclick="prevSlide()">
+                            <span><i class="fa-solid fa-chevron-left"></i></span>
+                        </button>
+                        <button class="carousel-control-next" onclick="nextSlide()">
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </button>
+                    </div>
+                </slider>
+            </div>
+        </div>
+
+        <main id="about">
+            <div id="row">
+                <div id="container">
+                    <main id="page">
+                        <h1>О студии</h1>
+                        <p>
+                            Studio Miroro - неформальный творческий проект, не являющийся юридическим лицом.
+                            <br><br>
+                            Мы создаём миры, где можно забыть о времени, найти радость в мелочах и увидеть привычное под новым углом.
+                        </p>
+                    </main>
+                </div>
+            </div>
+        </main>
+
+        <main id="games">
+            <div id="row">
+                <div id="container">
+                    <main id="page">
+                        <h1>Наши Игры</h1>
+                        <p>Окунись наш мир спокойствия и уюта!</p>
+
+                        <div id="cards-container">
+                            <article onclick="gamePageOpen('little-farmer')">
+                                <div id="content">
+                                    <img src=".assets/img/little-farmer-cover.png" alt="">
+                                    <h2>Little Farmer</h2>
+                                    <p>Расслабляющий симулятор фермерства. Погрузитесь в атмосферу спокойствия и творчества!</p>
+                                </div>
+                                <div id="footer">
+                                    <div id="platforms">
+                                        <p><i class="fa-brands fa-windows"></i></p>
+                                    </div>
+
+                                    <div id="price-prefix">
+                                        <p id="price">99.99 ₽</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article onclick="gamePageOpen('delicious-bread')">
+                                <div id="content">
+                                    <img src=".assets/img/delicious-bread-cover.png" alt="">
+                                    <h2>Вкусный Хлеб</h2>
+                                    <p>Возьмите в свои руки управление пекарни, доставшаяся Вам в наследство от ваших родителей. Начните новую жизнь в долине «Дубровка».</p>
+                                </div>
+                                <div id="footer">
+                                    <div id="platforms">
+                                        <p><i class="fa-brands fa-windows"></i></p>
+                                    </div>
+
+                                    <div id="price-prefix">
+                                        <p id="price">0.00 ₽</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </main>
         
+        <main id="contacts">
+            <div id="row">
+                <div id="container" style="width: 750px;">
+                    <main id="page">
+                        <h1>Свяжитесь с нами</h1>
+                        <p>Сотрудничество или предложения?<br>Будем рады выслушать!</p>
+                        <div id="contacts-main-container">
+                            <div id="container-contacts">
+                                <a href="mailto:studio.miroro@gmail.com">
+                                    Сотрудничество
+                                    <p>studio.miroro@gmail.com</p>
+                                </a>
+                                <div id="media">
+                                    <h2>Наши соц. сети</h2>
+                                    <ul id="media-links">
+                                        <a target="_blank" href="https://vk.com/studio.miroro">
+                                            <span><i class="fa-brands fa-vk"></i></span>
+                                            <p>Группа ВК</p>
+                                        </a>
+                                        <a target="_blank" href="https://t.me/miroro">
+                                            <span><i class="fa-brands fa-telegram"></i></span>
+                                            <p>Телеграм-канал</p>
+                                        </a>
+                                        <a target="_blank" href="https://bsky.app/profile/studio-miroro.ru">
+                                            <span><i class="fa-brands fa-bluesky"></i></span>
+                                            <p>Bluesky</p>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </main>
+
+        <main id="footer">
+            <div id="row">
+                <div id="container">
+                    <footer>
+                        <p id="copyright"></p>
+                    </footer>
+                </div>
+            </div>
+        </main>
+
+        <script src=".assets/js/menu.js"></script>
+        <script src=".assets/js/redirects.js"></script>
+        <script src=".assets/js/footer.js"></script>
+        <script src=".assets/js/slider.js"></script>
+        <script src=".assets/js/smooth-scroll.js"></script>
+        <script src="https://kit.fontawesome.com/9aaf1c70ab.js" crossorigin="anonymous"></script>
     </body>
 </html>
