@@ -19,7 +19,7 @@ function screenshot(id) {
     if (backgroundView.hasAttribute('style') && backgroundView.getAttribute('style') == 'display: none;') {
         console.log('test')
         backgroundView.setAttribute('style', 'display: flex;');
-        imgView.setAttribute('src', '.assets/img/screenshot_'+id+'.png');
+        imgView.setAttribute('src', 'assets/img/screenshot_'+id+'.png');
         document.body.style.overflowY = 'hidden';
     } else {
         screenshotClose();

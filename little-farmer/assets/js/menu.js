@@ -5,10 +5,10 @@ const headerIcon = document.querySelector('#header-icon');
 window.addEventListener('load', () => {
     if (headerIcon) {
         headerIcon.addEventListener('mouseenter', () => {
-            headerIcon.setAttribute('src', '.assets/img/icon-hover.png')
+            headerIcon.setAttribute('src', 'assets/img/icon-hover.png')
         })
         headerIcon.addEventListener('mouseout', () => {
-            headerIcon.setAttribute('src', '.assets/img/icon.png')
+            headerIcon.setAttribute('src', 'assets/img/icon.png')
         })
     }
 
