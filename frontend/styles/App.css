@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} body {
+  background-color: #fafeff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app-container {
+    width: 1250px;
+  }
+}

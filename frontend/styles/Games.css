@@ -1,0 +1,61 @@
+section#games {
+  margin-top: 50px;
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    article {
+      position: relative;
+      background-color: #fff;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 10px;
+      animation-name: show;
+      animation-duration: .5s;
+      img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      } .info {
+        padding: 10px;
+        h1 {
+          font-size: 26px;
+          color: rgb(27, 26, 35);
+        } p {
+          padding: 10px 0 25px 0;
+          font-size: 16px;
+          color: rgb(27, 26, 35,.75);
+        } .buttons {
+          display: flex;
+          gap: 10px;
+          button {
+            width: 100%;
+            padding: 12px;
+            outline: 0;
+            border: 1px solid rgb(27, 26, 35);
+            border-radius: 10px;
+            background-color: transparent;
+            color: rgb(27, 26, 35);
+            cursor: pointer;
+          } button:hover {
+            background-color: rgb(27, 26, 35);
+            color: #fff;
+          } button#disabled {display: none;}
+        }
+      }
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  } 100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 750px) {section#games {padding: 25px;}}
+@media (max-width: 500px) {section#games {padding: 10px;}}
+@media (max-width: 425px) {section#games {padding: 0px; }}
